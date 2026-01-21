@@ -10,12 +10,12 @@ import useCart from '../hooks/useCart';
 const Navbar = () => {
   const {cart} = useCart();
   return (
-    <div className='sticky font-mee top-2 z-30'>
-      <div className='grid grid-cols-3 bg-white rounded-2xl w-[80%] m-auto shadow-2xl  h-15 px-10'>
+    <div className='sticky  top-2 z-30'>
+      <div className='grid grid-cols-3 lg:bg-red-700 md:bg-amber-600 sm:bg-green-600 sm:w-full bg-white rounded-2xl w-[80%] m-auto shadow-2xl  h-15 px-10'>
           <div className=''>
            <NavLink to={"/"}> <img  className='w-25 h-11' src={logo} alt="" /></NavLink>
           </div>
-          <div className='flex justify-center items-center '>
+          <div className='flex justify-center  items-center '>
             <ul className='flex text-[12px] gap-3.5 uppercase'>
               <NavLink to={"/Mens"} className={({isActive})=>
               isActive && "border-b-red-600 border-b"} ><li className="hover:font-semibold hover:scale-105 transition-all duration-300">Men</li></NavLink>
