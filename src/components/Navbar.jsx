@@ -13,7 +13,7 @@ const Navbar = () => {
   const {cart} = useCart();
   return (
     <div className='sticky  top-2 z-30'>
-      <div className='grid sm:grid-cols-[60%_40%] grid-cols-[60%_40%] lg:grid-cols-3 md:grid-cols-3 bg-white  rounded-2xl w-[80%] px-8 m-auto shadow-2xl md:px-8 sm:px-8 h-15 lg:px-10'>
+      <div className='grid sm:grid-cols-[60%_40%] grid-cols-[60%_40%] lg:grid-cols-3 md:grid-cols-3 bg-white  rounded-2xl w-[95%] px-3 m-auto shadow-2xl md:px-8 sm:px-8 h-15 lg:px-10'>
           <div className='flex justify-between  '>
             <button className='lg:hidden md:hidden '>
              <MenuIcon/>
