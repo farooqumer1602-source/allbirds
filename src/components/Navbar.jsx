@@ -70,11 +70,11 @@ const Navbar = () => {
             </ul>
           </div>
       </div>
-      <div className={`${open ? "translate-x-0" : "-translate-x-full"} text-white bg-gray-900 transition-all duration-300 w-[60%] lg:hidden md:hidden pt-9 p-5 top-0 fixed left-0 h-screen`}>
+      <div className={`${open ? "translate-x-0" : "-translate-x-full"} text-white bg-gray-900 transition-all duration-300 w-full sm:w-[70%] lg:hidden md:hidden bottom-0 pt-9 p-5 top-0 fixed left-0 h-screen`}>
           <button className='' onClick={Handleopen }>
             <CloseIcon fontSize='large'/>
           </button>
-          <ul className='  p-10 space-y-8 text-3xl'>
+          <ul className='  p-10 space-y-8 text-2xl sm:block flex justify-center items-center flex-col'>
             <li><Link onClick={Handleopen} to={"/"}>Home</Link></li>
             <li><Link  onClick={Handleopen} to={"/Mens"}>Men</Link></li>
             <li><Link onClick={Handleopen}  to={"/Womens"}>Women</Link></li>
